@@ -56,7 +56,7 @@ resource "aws_route_table_association" "my_vpc_us_east_1a_public" {
 resource "aws_subnet" "private-subnet1" {
   vpc_id = aws_vpc.my_vpc.id
   cidr_block = "10.0.1.0/24"
-  availability_zone = "eu-west-1a"
+  availability_zone = "us-east-1a"
 
   tags = {
     Name = "Private Subnet1"
@@ -66,7 +66,7 @@ resource "aws_subnet" "private-subnet1" {
 resource "aws_subnet" "private-subnet2" {
   vpc_id = aws_vpc.my_vpc.id
   cidr_block = "10.0.2.0/24"
-  availability_zone = "eu-west-1d"
+  availability_zone = "us-east-1d"
 
   tags = {
     Name = "Private Subnet2"
@@ -76,7 +76,7 @@ resource "aws_subnet" "private-subnet2" {
 resource "aws_subnet" "private-subnet3" {
   vpc_id = aws_vpc.my_vpc.id
   cidr_block = "10.0.3.0/24"
-  availability_zone = "eu-west-1b"
+  availability_zone = "us-east-1b"
 
   tags = {
     Name = "Private Subnet3"
@@ -86,7 +86,7 @@ resource "aws_subnet" "private-subnet3" {
 resource "aws_subnet" "private-subnet4" {
   vpc_id = aws_vpc.my_vpc.id
   cidr_block = "10.0.4.0/24"
-  availability_zone = "eu-west-1c"
+  availability_zone = "us-east-1c"
 
   tags = {
     Name = "Private Subnet3"
